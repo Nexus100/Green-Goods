@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/faa657fc98.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+          <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/duotone.css"/>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/brands.css"/>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/output.css">
+    <link rel="stylesheet" href="/styles/tailwind.css">
+    <script src="/src/js/preloader.js"></script>
+    <script src="/src//js/carousel.js"></script>
+    <script src="/src/js/favorites.js"></script>
+    <script src="/src/js/cart.js"></script>
+    <script src="/src/js/filters.js"></script>
+    <link rel="icon" href="/images/logo_tab.png" type="icon">
+    <title>Био Магазин - Green Goods</title>
+</head>
+
+<body>
+
+    <div id='pre_loader'>
+        <img id='loading_gif' alt='loading' src="https://zelen.bg/images/zelen.gif" />
+    </div>
+
+    <header>
+        <div id="content">
+            <a id="logo1" href="nachalo.html"><img id="logo" src="/images/3.png" alt="greengoods.bg"></a>
+            <div id="adres">
+                <div id="phone">
+                    <a href="tel:0896677199"><i class="fa-solid fa-phone"></i> 0896 677 199</a>
+                </div>
+                <div id="location">
+                    <a href="about.html"><i class="fa-solid fa-location-dot"></i> МАГАЗИНИ</a>
+                </div>
+            </div>
+            <div id="search">
+                <input type="text" class="form-control fast_search m-auto bg-transparent fast_search_advanced"
+                    name="fast-search" placeholder="Търсене......">
+                <button class="button search-btn" onclick="showHideSearch()">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div id="right">
+                <a href="avtor.html"><i class="fa-regular fa-user"></i></a>
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="favorite-counter">0</span>
+                </div>
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-cart-shopping"></i>
+                    <span class="cart-counter">0</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="navbar">
+            <nav>
+                <ul style="display: flex; list-style-type: none; justify-content: center; padding: 10px; margin: 0; background-color: white;">
+                    <li style="margin: 0 55px; text-align: center;">
+                        <a href="nachalo.html" style="text-decoration: none; color: #512d1e;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <i class="fa fa-trophy" style="font-size: 24px;"></i>
+                                <span>Начало</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="margin: 0 55px; text-align: center;">
+                        <a href="zafirmata.html" style="text-decoration: none; color: #512d1e;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <i class="fa fa-briefcase" style="font-size: 24px;"></i>
+                                <span>За фирмата</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="margin: 0 55px; text-align: center;">
+                        <a href="katalog.html" style="text-decoration: none; color: #512d1e;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <i class="fa fa-tree" style="font-size: 24px;"></i>
+                                <span>Каталог</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="margin: 0 55px; text-align: center;">
+                        <a href="promociq.php" style="text-decoration: none; color: #512d1e;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <i class="fa fa-leaf" style="font-size: 24px;"></i>
+                                <span>Промоция</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="margin: 0 55px; text-align: center;">
+                        <a href="kontakti.html" style="text-decoration: none; color: #512d1e;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <i class="fa fa-bread-slice" style="font-size: 24px;"></i>
+                                <span>Контакти</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li style="margin: 0 55px; text-align: center;">
+                        <a href="avtor.html" style="text-decoration: none; color: #512d1e;">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                                <i class="fa fa-address-book" style="font-size: 24px;"></i>
+                                <span>Автор</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+            </nav>
+        </div>
+    </header>
+
+</header>
+
+<main class="contact-section">
+    <h1 class="contact-title">КОНТАКТИ</h1>
+    
+    <div class="contact-grid">
+        <!-- Contact Info Sections -->
+        <div class="contact-info">
+            <div class="info-box">
+                <h2>ОБСЛУЖВАНЕ ОНЛАЙН ПОРЪЧКИ</h2>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> 0896 677 199</li>
+                    <li><i class="fa-solid fa-envelope"></i> shop@zelen.bg</li>
+                    <li><i class="fa-regular fa-clock"></i> пон. – пет. 8:00 – 17:00</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h2>ТЪРГОВИЯ НА ЕДРО</h2>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> 0877 533 005</li>
+                    <li><i class="fa-solid fa-envelope"></i> trader-bg@smartorganic.eu</li>
+                    <li><i class="fa-regular fa-clock"></i> пон. – пет. 9:00 – 17:00</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h2>ОБСЛУЖВАНЕ ОНЛАЙН ПОРЪЧКИ</h2>
+                <ul>
+                    <li>„Смарт Органик" АД ЕИК: BG203476985</li>
+                    <li>гр. София, ул. Банат 28</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <h2>ИЗПРАТЕТЕ ЗАПИТВАНЕ</h2>
+            <form class="contact-form" action="https://formsubmit.co/3e976596c36b89a9a940082792e6205f" method="POST">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Име" required>
+                    <input type="tel" name="phone" placeholder="Телефон" required>
+                    <input type="email" name="email" placeholder="Имейл" required>
+                </div>
+                <input type="text" name="subject" placeholder="Тема" required>
+                <textarea name="message" placeholder="Съобщение" required></textarea>
+                <div class="form-footer">
+                    <label class="checkbox-container">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        С изпращането на това запитване към нас Вие предоставяте Ваши лични данни, които ние ще обработваме и съхраняваме съгласно Общия регламент за защита на данните на Европейския съюз (GDPR) и нашата Политика за конфиденциалност на данните, с която вие се съгласавате
+                    </label>
+                    <button type="submit" class="submit-btn">ИЗПРАТИ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-section">
+        <h2>НАШИТЕ МАГАЗИНИ</h2>
+        <div class="store-info">
+            <h3>БИО МАГАЗИН GREEN GOODS ВЪВ РУСЕ</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Русе Център, ул. „Георги С. Раковски“ 2, 7000 Русе</p>
+            <p><i class="fa-solid fa-phone"></i> 0894 517 712</p>
+            <div class="store-hours">
+                <p>Работно време:</p>
+                <p>Понеделник – Петък 8:00 – 20:00</p>
+                <p>Събота 9:00 – 20:00</p>
+                <p>Неделя 9:00 – 20:00</p>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.3583295131025!2d25.953503775123107!3d43.84840113978556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ae61d4bad8ad8d%3A0x6e5dd553a9763aa4!2z0JLQutGD0YHQvdC-INCX0LTRgNCw0LLQtQ!5e0!3m2!1sbg!2sbg!4v1740233246516!5m2!1sbg!2sbg"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</main>
+
+<footer>
+
+    <footer>
+        <div id="footer">
+            <ul style="display: flex; list-style-type: none; justify-content: center; padding: 10px; margin: 0;">
+                <li style="margin: 0 55px; text-align: center;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <i class="fa-solid fa-truck-fast" style="font-size: 40px;"></i>
+                        <span style="margin-top: 10px;">ДОСТАВКА В ЦЯЛАТА СТРАНА</span>
+                    </div>
+                </li>
+                <li style="margin: 0 55px; text-align: center;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <i class="fa-regular fa-clock" style="font-size: 40px;"></i>
+                        <span style="margin-top: 10px;">ЕКСПРЕСНА ДОСТАВКА</span>
+                    </div>
+                </li>
+                <li style="margin: 0 55px; text-align: center;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <i class="fa-regular fa-credit-card" style="font-size: 40px;"></i>
+                        <span style="margin-top: 10px;">ОНЛАЙН ПЛАЩАНЕ</span>
+                    </div>
+                </li>
+                <li style="margin: 0 55px; text-align: center;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <i class="fa-regular fa-heart" style="font-size: 40px;"></i>
+                        <span style="margin-top: 10px;">ЗА ВСИЧКИ ВСЕКИ ДЕН</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="footer2">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>КОГА РАБОТИМ?</h3>
+                    <ul>
+                        <li><i class="fa-regular fa-clock"></i> Понеделник-Петък 08:00-17:00</li>
+                        <li><i class="fa-regular fa-envelope"></i> <a href="mailto:shop@greengoods.bg">shop@greengoods.bg</a></li>
+                        <li class="socials"><i class="fa-brands fa-facebook-messenger"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>ЦЕНА ЗА ДОСТАВКА</h3>
+                    <ul>
+                        <li><b>За поръчки над 89 лв.</b></li>
+                        <li>Безплатна доставка</li>
+                        <li><b>За поръчки от 69 до 89 лв.</b></li>
+                        <li>До офис на Еконт и Спиди: 2.99 лв.</li>
+                        <li>До личен адрес: 3.99 лв.</li>
+                        <li><b>За поръчки под 69 лв.</b></li>
+                        <li>До офис на Еконт и Спиди: 4.99 лв.</li>
+                        <li>До личен адрес: 5.99 лв.</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>БИО МАГАЗИН GREEN GOODS</h3>
+                    <ul>
+                        <li>Доставка и плащане</li>
+                        <li>Контакти</li>
+                        <li>Магазини</li>
+                        <li>Общи условия</li>
+                        <li>Политика за поверителност</li>
+                        <li>За нас</li>
+                        <li>Политика за бисквитки</li>
+                        <li>Декларация за обработване на личните данни</li>
+                        <li>Блог</li>
+                        <li>С Грижа за Планетата</li>
+                        <li>Сертификати за качество</li>
+                        <li>Работа в ЗЕЛЕН</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Абонирай се за нашия бюлетин и получавай подаръци и новини за актуалните ни промоции!</h3>
+                    <form
+                        action="https://formsubmit.co/3e976596c36b89a9a940082792e6205f"
+                        method="post"
+                    >
+                        <div class="form-group">
+                            <label>Имейл адрес *</label>
+                            <input type="email" name="email" placeholder="Вашия адрес">
+                        </div>
+                        <div class="form-group">
+                            <label>Име</label>
+                            <input type="text" name="name" placeholder="Име">
+                        </div>
+                        <div class="form-group">
+                            <label>Фамилия</label>
+                            <input type="text" name="surname" placeholder="Фамилия">
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="consent" id="consent">
+                            <label for="consent">Съгласявам се с политиката за поверителност на онлайн магазин Green Goods.</label>
+                        </div>
+                        <button type="submit">АБОНИРАЙ МЕ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
